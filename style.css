@@ -1,3 +1,47 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --background: #f8f8f6;
+    --pic-color: #fd1c15;
+    --black: #010006;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+main {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+header {
+    text-align: center;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 11px;
+    letter-spacing: 4px;    
+    margin-top: 50px;
+}
+
+#feed img {
+    width: 270px;
+    height: 270px;
+    margin-top: 30px;
+}
+
+#feed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
