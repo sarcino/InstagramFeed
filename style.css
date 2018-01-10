@@ -87,4 +87,20 @@ figcaption img {
     width: 21px;
     height: 21px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
+
+span {
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+span img {
+    vertical-align: bottom;
+    padding-right: 8px;
+    width: 28px;
+    height: 20px;
+}
+
+
