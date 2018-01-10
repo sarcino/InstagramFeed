@@ -3,9 +3,10 @@
 }
 
 :root {
-    --background: #f8f8f6;
-    --pic-color: #fd1c15;
-    --black: #010006;
+    --background: #fbfbf8;
+    --pic-color: #d83f2d;
+    --black: #201a19;
+    --font-color: #fbfbf8;
 }
 
 body {
@@ -29,14 +30,13 @@ header {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 11px;
-    letter-spacing: 4px;    
+    letter-spacing: 4px;
     margin-top: 50px;
 }
 
-#feed img {
+figure img {
     width: 270px;
     height: 270px;
-    margin-top: 30px;
 }
 
 #feed {
@@ -45,3 +45,38 @@ header {
     flex-wrap: wrap;
 }
 
+figure {
+    position: relative;
+    margin-top: 30px;
+}
+
+figcaption {
+    z-index: 40;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: var(--pic-color);
+    transition: .5s ease;
+    opacity: 0;
+}
+
+figcaption:hover {
+    opacity: 1;
+}
+
+figcaption p {
+    padding: 25px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+figcaption img {
+    width: 21px;
+    height: 21px;
+    margin-bottom: 5px;
+}
