@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+     $('body').css('display', 'none');
+    $('body').fadeIn(2100);
 
     $.ajax({
         type: "GET",
